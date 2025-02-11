@@ -1,4 +1,4 @@
-# mydevopsprojects-aps
+# AWS Cloud Cost Management
 I've seen both sides of arguements on whether the cloud is cheaper than on-Premise and do-it-all-yourself.
 
 The article also says
