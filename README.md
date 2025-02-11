@@ -39,17 +39,13 @@ Use Lambda to turn off dev/test environments in the weekends/evenings.
 Consider moving downloadable assets to cloudfront instead of letting people download from your S3 bucket. This will save costs in many cases.
 Different AWS regions have different price for the services.
 Understand Data Transfer Costs:
-Consider Using VPC endpoints , especially if you're using NAT Gateway with a lot of traffic. Just by switiching to VPC endpoints, businesses can save thousands of dollars per months on data transfer costs as mentioned in this article:https://bluesentryit.com/gain-real-savings-proper-cloud-setup/
+Consider Using VPC endpoints , especially if you're using NAT Gateway with a lot of traffic. Just by switiching to VPC endpoints, businesses can save thousands of dollars per months on data transfer costs
 
 Inter region Traffic: EC2 traffic cost between two AZ's is NOT free. It's free within an AZ(only if you're using private IP) . So make a good tradeoff decision considering the need for High availability and Cost minimization.
 
 Architect your systems so that there is minimal data transfer across AWS regions or availability zones.
 
-DynamoDB Cost tips:
-https://content.nexosis.com/blog/understanding-dynamodb-costs-and-document-sizing
 
-S3 Cost tips:
-https://blog.cloudability.com/aws-s3-understanding-cloud-storage-costs-to-save/
 
 Other things to consider
 Consider that with managed services like RDS you need fewer engineers to setup a service. Your cloud cost may be higher , but you may need less engineers.
